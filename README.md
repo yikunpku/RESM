@@ -7,7 +7,7 @@
 
 ## 📣 News
 - **[2025/07]** 🎉 We release the dataset and checkpoints on [Zenodo](https://doi.org/10.5281/zenodo.15980875)!
-- **[2025/07]** 📊 Initial release of RESM-150M and RESM-650M models with comprehensive documentation.
+- **[2025/07]** 📊 Initial release the code of RESM-150M and RESM-650M models with comprehensive documentation.
 
 ## ⚡ Overview
 
@@ -30,8 +30,8 @@ RESM (RNA Evolution-Scale Modeling) is a state-of-the-art RNA language model tha
 | Resource | Description | Size | Link |
 |----------|-------------|------|------|
 | **Datasets** | pre-training and downstream datasets | ~6.4GB | [Download](https://doi.org/10.5281/zenodo.15980875) |
-| **RESM-150M** |  model checkpoint | ~1.7GB | [Download](https://doi.org/10.5281/zenodo.15980875) |
-| **RESM-650M** |  model checkpoint | ~2.5GB | [Download](https://doi.org/10.5281/zenodo.15980875) |
+| **RESM-150M** |  model checkpoint | ~1.8GB | [Download](https://doi.org/10.5281/zenodo.15980875) |
+| **RESM-650M** |  model checkpoint | ~2.6GB | [Download](https://doi.org/10.5281/zenodo.15980875) |
 
 
 ## 🚀 Quick Start
