@@ -7,7 +7,7 @@
 
 ## 📣 News
 - **[2025/07]** 🎉 We release the dataset and checkpoints on [Zenodo](https://doi.org/10.5281/zenodo.15980875)!
-- **[2025/07]** 📊 Initial release the code of RESM-150M and RESM-650M models with comprehensive documentation.
+- **[2025/07]** 📊 Initial release the code of RESM-150M and RESM-650M models  with comprehensive documentation.
 
 ## ⚡ Overview
 
@@ -21,8 +21,9 @@ RESM (RNA Evolution-Scale Modeling) is a state-of-the-art RNA language model tha
 - **Pseudo-protein Mapping**: Novel approach to convert RNA's 4-letter alphabet into protein-like representations
 - **Knowledge Transfer**: Leverages the powerful representations learned by ESM protein language models
 - **Dual-task Excellence**: First RNA model to achieve state-of-the-art performance on both structural and functional prediction tasks
-- **Zero-shot Capability**: Outperforms **14** RNA language models in zero-shot evaluation without task-specific training
+- **Zero-shot Capability**: Outperforms **12** RNA language models in zero-shot evaluation without task-specific training
 - **Benchmark Performance**: Demonstrates superior results across **8** downstream tasks, surpassing **60+** models
+- **Long RNA Breakthrough**: 81% accuracy gain and 1000× speedup on sequences up to 4,000 nucleotides
 - **Flexible Architecture**: Available in 150M and 650M parameter versions
 
 ## 📥 Download URL
@@ -144,15 +145,21 @@ RESM builds upon ESM2 architecture with RNA-specific adaptations:
 
 If you use RESM in your research, please cite our paper:
 
-<!-- ```bibtex
-@article{zhang2024resm,
-  title={RESM: Capturing sequence and structure encoding of RNAs by mapped transfer learning from evolution-scale-modeling protein language model},
-  author={Zhang, Y.K. and others},
-  journal={bioRxiv},
-  year={2024},
-  doi={10.1101/xxxx.xxxx}
+```bibtex
+@article {Zhang2025.08.09.669469,
+	author = {Zhang, Yikun and Zhang, Hao and Li, Guo-Wei and Wang, He and Zhang, Xing and Hong, Xu and Zhang, Tingting and Wen, Liangsheng and Zhao, Yu and Jiang, Jiuhong and Chen, Jie and Chen, Yanjun and Liu, Liwei and Zhan, Jian and Zhou, Yaoqi},
+	title = {RESM: Capturing sequence and structure encoding of RNAs by mapped transfer learning from ESM (evolutionary scale modeling) protein language model},
+	elocation-id = {2025.08.09.669469},
+	year = {2025},
+	doi = {10.1101/2025.08.09.669469},
+	publisher = {Cold Spring Harbor Laboratory},
+	abstract = {RNA sequences exhibit lower evolutionary conservation than proteins due to their informationally constrained four-letter alphabet, compared to the 20-letter code of proteins. More limited information makes unsupervised learning of structural and functional evolutionary patterns more challenging from single RNA sequences. We overcame this limitation by mapping RNA sequences to pseudo-protein sequences to allow effective transfer training from a protein language model (protein Evolution-Scale Model 2, protESM-2). The resulting RNA ESM (RESM) outperforms 12 existing RNA language models in zero-shot prediction, not only in sequence classification but also in RNA secondary structure and RNA-RNA interaction prediction. Further supervised fine-tuning demonstrates RESM{\textquoteright}s generalizability and superior performance over the existing models compared across multiple downstream tasks, including mRNA ribosome loading efficiency and gene expression prediction, despite RESM being trained exclusively on noncoding RNAs. Moreover, RESM can generalize to unseen sequences beyond its 1,024-nucleotide training limit, achieving 81.3\% improvement over state-of-the-art methods in supervised secondary structure prediction for RNAs up to 4,000 nucleotides, limited only by the available GPU memory, while providing \&gt;1000-fold speedup compared to MSA-based approaches. RESM provides a robust foundation for deciphering RNA sequence-structure-function relationships, with broad implications for RNA biology.Competing Interest StatementPatent applications related to RESM and downstream tasks were submitted by China Mobile Research Institute and Shenzhen Bay Laboratory. LW,YC, \&amp; TZ are affiliated with China Mobile Research Institute. YiZ, HW, JZ, \&amp; YaZ are affiliated with Shenzhen Bay Laboratory. JZ and YaZ are the CEO and the chair of the scientific advisory board for Ribopeutic, respectively. All other authors declare no competing interests.},
+	URL = {https://www.biorxiv.org/content/early/2025/08/10/2025.08.09.669469},
+	eprint = {https://www.biorxiv.org/content/early/2025/08/10/2025.08.09.669469.full.pdf},
+	journal = {bioRxiv}
 }
-``` -->
+
+```
 
 
 ## 📄 License
